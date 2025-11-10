@@ -85,3 +85,15 @@ pip install -r requirements.txt  # 若有額外依賴
 ```bash
 pytest
 ```
+
+## 網頁介面
+
+專案也提供簡易的網頁介面，可讓使用者在瀏覽器中輸入資料並查看計算結果：
+
+```bash
+export FLASK_APP=pallet_calc.web
+flask run --reload
+```
+
+預設會在 `http://127.0.0.1:5000/` 提供表單，填寫產品訂單數量、外箱尺寸、棧板尺寸、是否允許混裝以及貨櫃高度限制後即可送出。
+
